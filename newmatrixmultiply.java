@@ -6,14 +6,14 @@
 package college;
 
 import java.util.Scanner;
-public class newmatrixmultiply 
+public class matrixmultiply 
 {
     int m,n,p,q,i,j,k;
     int m1[][];
     int m2[][];
     int m3[][];
   static  Scanner sc=new Scanner(System.in);
-    newmatrixmultiply(int m,int n,int p,int q)
+    matrixmultiply(int m,int n,int p,int q)
     {
         this.m=m;
         this.n=n;
@@ -54,7 +54,7 @@ void multiply()
 
 void display()
 {
-        System.out.println("resltant matrix is");
+        System.out.println("resultant matrix is");
         for(i=0;i<m;i++)
         {
                 for(j=0;j<q;j++)
@@ -76,7 +76,7 @@ void display()
         System.out.println("enter no of rows and column of second matrix");
          w=sc.nextInt();
         x=sc.nextInt();
-        newmatrixmultiply n=new newmatrixmultiply(u,v,w,x);
+        matrixmultiply n=new matrixmultiply(u,v,w,x);
         n.insert();
         n.multiply();
         n.display();
